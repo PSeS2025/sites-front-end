@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>...
+</head>
+<body>
+    <header>...nav...</header>
+    <main class="container">
+        <h1>Como doar</h1>
+        <p>Opções: doação única, recorrente, doação de itens.</p>
+        
+        <h2>Doação online</h2>
+        <form id="form-doacao" class="card" action="#" method="post">
+            <label>Nome <input type="text" name="nome" required></label>
+            <label>Email <input type="email" name="email" required></label>
+            <label>Valor (R$) <input type="number" name="valor" min="1" step="0.01" required></label>
+            <label>Frequência
+                <select name="frequencia" required>
+                    <option value="unica">Única</option>
+                    <option value="mensal">Mensal</option>
+                    <option value="anual">Anual</option>
+                </select>
+            </label>
+            <button type="submit">Doar</button>
+        </form>
+    </main>
+    <footer>...footer...</footer>
+</body>
+</html>
