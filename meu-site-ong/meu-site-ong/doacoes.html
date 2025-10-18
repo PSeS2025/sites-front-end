@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contato - ONG Esperança</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1>ONG Esperança da Infância</h1>
+      <nav aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="voluntariado.html">Voluntariado</a>
+        <a href="doacoes.html">Doações</a>
+        <a href="transparencia.html">Transparência</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <h1>Como doar</h1>
+        <p>Opções: doação única, recorrente, doação de itens.</p>
+        
+        <h2>Doação online</h2>
+        <form id="form-doacao" class="card" action="#" method="post">
+            <label>Nome <input type="text" name="nome" required></label>
+            <label>Email <input type="email" name="email" required></label>
+            <label>Valor (R$) <input type="number" name="valor" min="1" step="0.01" required></label>
+            <label>Frequência
+                <select name="frequencia" required>
+                    <option value="unica">Única</option>
+                    <option value="mensal">Mensal</option>
+                    <option value="anual">Anual</option>
+                </select>
+            </label>
+            <button type="submit">Doar</button>
+        </form>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2025 ONG Esperança - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

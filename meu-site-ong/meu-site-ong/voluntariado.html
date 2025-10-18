@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Voluntariado - ONG Esperança</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1>ONG Esperança da Infância</h1>
+      <nav aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="voluntariado.html">Voluntariado</a>
+        <a href="doacoes.html">Doações</a>
+        <a href="transparencia.html">Transparência</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <h1>Cadastro de Voluntário</h1>
+        <form id="form-voluntario" class="card" action="#" method="post" novalidate>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome
+                    <input type="text" name="nome" required minlength="3" aria-required="true">
+                </label>
+
+                <label>Email
+                    <input type="email" name="email" required aria-required="true">
+                </label>
+
+                <label>CPF
+                    <input type="text" name="cpf" data-mask="cpf" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" aria-describedby="cpfHelp">
+                    <small id="cpfHelp">Formato: 000.000.000-00</small>
+                </label>
+
+                <label>Telefone
+                    <input type="tel" name="telefone" data-mask="tel" placeholder="(00) 00000-0000" required>
+                </label>
+
+                <label>CEP
+                    <input type="text" name="cep" data-mask="cep" placeholder="00000-000" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Habilidades e experiência</legend>
+                <label><input type="checkbox" name="habilidade[]" value="educacao"> Educação</label>
+                <label><input type="checkbox" name="habilidade[]" value="saude"> Saúde</label>
+                <label><input type="checkbox" name="habilidade[]" value="logistica"> Logística</label>
+                <label><input type="checkbox" name="habilidade[]" value="comunicacao"> Comunicação</label>
+
+                <label>Experiência prévia
+                    <textarea name="experiencia" rows="4" placeholder="Descreva sua experiência..."></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Disponibilidade</legend>
+                <label><input type="radio" name="disponibilidade" value="semanal" required> Semanal</label>
+                <label><input type="radio" name="disponibilidade" value="fins_de_semana"> Fins de semana</label>
+                <label><input type="radio" name="disponibilidade" value="eventos"> Eventos</label>
+            </fieldset>
+
+            <button type="submit">Enviar cadastro</button>
+        </form>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2025 ONG Esperança - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
